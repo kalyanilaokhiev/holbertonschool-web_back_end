@@ -1,12 +1,8 @@
 #!/usr/bin/env python3
 
-
-
-#!/usr/bin/env python3
-"""Import wait_random from the previous python file
-that you've written and write an async routine called wait_n
-that takes in 2 int arguments (in this order): n and max_delay.
-You will spawn wait_random n times with the specified max_delay"""
+"""Take the code from wait_n and alter it into a new function
+task_wait_n. The code is nearly identical to wait_n
+except task_wait_random is being called."""
 
 import asyncio
 from typing import List
@@ -15,7 +11,7 @@ from typing import List
 task_wait_random = __import__('3-tasks').task_wait_random
 
 
-async def task_wait_n (n: int, max_delay: int) -> List[float]:
+async def task_wait_n(n: int, max_delay: int) -> List[float]:
     """runs n amount of runs with a max of max_delay concurrenly
     and orders it in ascending order """
     n_runs = []
