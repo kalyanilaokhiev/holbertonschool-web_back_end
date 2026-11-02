@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-
 """Write an asynchronous coroutine that takes in an int
 argument that waits for a random delay between 0 and max_delay
 seconds and eventually returns it."""
@@ -13,6 +12,3 @@ async def wait_random(max_delay=10.0):
     delay = random.uniform(0, max_delay)
     await asyncio.sleep(delay)
     return (delay)
-
-if __name__ == "__main__":
-    print(asyncio.run(wait_random()))
