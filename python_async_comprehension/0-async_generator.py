@@ -12,4 +12,3 @@ async def async_generator():
         await asyncio.sleep(1)
         # pausing func using yield instead of returning
         yield random.uniform(0, 10)
-
